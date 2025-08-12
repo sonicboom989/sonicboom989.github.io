@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Luke Coffman — Portfolio</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="kubar"></div>
+<header class="header">
+  <div class="row container">
+    <strong>Luke Coffman</strong>
+    <nav style="display:flex; gap:12px; align-items:center;">
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a class="btn primary" href="Master Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      <button class="toggle" onclick="toggleTheme()">Dark / Light</button>
+    </nav>
+  </div>
+</header>
+
+<main class="container" style="padding-top:24px">
+  <section class="grid grid-2" style="align-items:start">
+    <div>
+      <h1>Luke Coffman</h1>
+      <div class="subtitle">CS & Cybersecurity Engineering @ KU</div>
+      <p style="color:var(--muted); line-height:1.6">
+        I build useful software and AI tools — I like clean code, fast feedback loops, and collaborating in GitHub‑first teams.
+      </p>
+      <div style="margin-top:10px">
+        <span class="badge">Lawrence, KS</span>
+        <span class="badge">Java, Python, C++</span>
+        <span class="badge">Linux • Git/GitHub</span>
+      </div>
+      <div style="display:flex; gap:10px; margin-top:16px">
+        <a class="btn primary" href="#experience">See Experience</a>
+        <a class="btn outline-red" href="Master Resume.pdf" target="_blank">Download Resume</a>
+        <a class="btn" href="https://github.com/sonicboom989" target="_blank">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/luke-coffman06" target="_blank">LinkedIn</a>
+        <a class="btn" href="mailto:lrcoffman@ku.edu">Email</a>
+      </div>
+    </div>
+    <aside>
+      <div class="card">
+        <img class="headshot" src="assets/headshot.jpg" alt="Luke Coffman headshot" />
+        <h3 class="section-title" style="margin-top:12px">Honors</h3>
+        <ul class="list">
+          <li>HackKU25 — Best Beginner Project</li>
+          <li>KU Excellence Scholarship</li>
+          <li>KU Honors Program</li>
+        </ul>
+      </div>
+    </aside>
+  </section>
+
+  <section id="projects" style="margin-top:28px">
+    <h2 class="section-title">Projects</h2>
+    <p class="list">I’ll add projects here as I complete them.</p>
+    <div class="project-empty" style="margin-top:12px">
+      <p style="margin:6px 0">Add entries to a <code>projects.json</code> file like:</p>
+      <pre><code>{
+  "projects":[
+    {
+      "name":"Project Name",
+      "description":"Short, results-focused description.",
+      "tags":["Python","Flask"],
+      "links":{"demo":"https://...","code":"https://github.com/sonicboom989/..."}
+    }
+  ]
+}</code></pre>
+      <p style="margin:6px 0">Then update the HTML or use a simple script to render them.</p>
+    </div>
+  </section>
+
+  <section id="experience" style="margin-top:28px">
+    <h2 class="section-title">Experience</h2>
+    <div class="grid" style="grid-template-columns:1fr 1fr">
+      <div class="card">
+        <h3 style="margin:0 0 4px 0;color:var(--ku-crimson)">Independent Contractor • Regenexx</h3>
+        <div class="list" style="margin:6px 0 10px 0; color:var(--muted)">Jan 2025 – Apr 2025 — Des Moines, IA</div>
+        <ul class="list">
+          <li>Built target‑outreach software to identify patients based on health history.</li>
+          <li>Collaborated via GitHub workflows; emphasized code reviews and PRs.</li>
+          <li>Applied data analysis to improve targeting accuracy and efficiency.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 4px 0;color:var(--ku-crimson)">Co‑Proprietor • Coffman Bros Lawn Care</h3>
+        <div class="list" style="margin:6px 0 10px 0; color:var(--muted)">Mar 2018 – Aug 2024 — IL</div>
+        <ul class="list">
+          <li>Grew a 40+ customer base and surpassed $10k annual revenue.</li>
+          <li>Owned client onboarding, quotes, billing, and retention strategies.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" style="margin-top:28px">
+    <h2 class="section-title">Skills</h2>
+    <div>
+      <span class="badge-pill">Java</span>
+      <span class="badge-pill">Python</span>
+      <span class="badge-pill">C++</span>
+      <span class="badge-pill">Git & GitHub</span>
+      <span class="badge-pill">Linux</span>
+      <span class="badge-pill">Flask (basics)</span>
+      <span class="badge-pill">Data Structures</span>
+      <span class="badge-pill">Machine Learning</span>
+      <span class="badge-pill">Problem Solving</span>
+    </div>
+  </section>
+
+  <section id="contact" style="margin-top:28px">
+    <div class="card">
+      <h2 class="section-title">Get in touch</h2>
+      <p class="list">Open to software, AI/ML, and cybersecurity internships for Summer <span id="year"></span>. Email me or connect on LinkedIn.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:10px">
+        <a class="btn primary" href="mailto:lrcoffman@ku.edu">Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/luke-coffman06" target="_blank">LinkedIn</a>
+        <a class="btn" href="https://github.com/sonicboom989" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Luke Coffman. Built without a framework — ready for GitHub Pages.
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
